@@ -1,12 +1,13 @@
 terraform {
   backend "remote" {
-    organization = "hashicorp-learn"
+    organization = "infrastructure-pipelines-workshop"
 
     workspaces {
-      name = "learn-terraform-pipelines-consul"
-    }
-  }
+      name = "ben-d-consul"
+    } 
+  } 
 }
+
 
 data "terraform_remote_state" "cluster" {
   backend = "remote"
